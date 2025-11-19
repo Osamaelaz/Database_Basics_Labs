@@ -1,0 +1,2 @@
+All Relations related to airline are Total not partial ,
+in docmenation not declare so i ask system analyst and tell me  

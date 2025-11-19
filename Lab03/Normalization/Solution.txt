@@ -1,0 +1,44 @@
+----------------------------
+Problem 1: Sales Order
+----------------------------
+1-St Normal Form
+
+ SalesOrder(SalesOrderNo(PK),SalesOrderDate,CustNo,CustName,CustAddress,ClerkNo,ClerkName)
+ SalesOrderDetails(SalesOrderNo,(PK),ItemNo(PK),ItemDescription,Quantity,Unit Price,,Total)
+
+2-St Normal Form
+ 
+ Cutsomer(CustNo(PK),CustName,CustAddress)
+ Item(ItemNo(Pk),ItemDescription,UnitPrice)
+ SalesOrder(SalesOrderNo(PK),SalesOrderDate,CustNo(FK),ClerkNo,ClerkName)
+ SalesOrderDetails(SalesOrderNo(FK),ItemNo(FK),Quantity,Total)
+
+3-St Normal Form
+
+  Cutsomer(CustNo(PK),CustName,CustAddress)
+  Item(ItemNo(Pk),ItemDescription,UnitPrice)
+  SalesOrder(SalesOrderNo(PK),SalesOrderDate,CustNo(FK),ClerkNo(FK))
+  SalesOrderDetails(SalesOrderNo(FK),ItemNo(FK),Quantity,Total)
+  Clerk(ClerkNo(Pk),ClerkName)
+
+
+--------------------------------
+Problem 2: Customer Complaints
+--------------------------------
+1-St Normal Form
+  
+  Complaint(CustNo(PK),DeptNo(FK),CustName,DateOfCompaints,NatureOfComplaints)
+  Department(DeptNo(PK),DeptName,DeptLocation,MgrName,MgrId,Tel)
+  
+2-St Normal Form 
+  
+  Customer(CustNo(Pk),CustName)
+  Complaint(CustNo(FK),DeptNo(FK),DateOfCompaints,NatureOfComplaints)
+  Department(DeptNo(PK),DeptName,DeptLocation,MgrId,Tel)
+
+3.St Normal Form
+  Manager(MgrId(PK),MgrName)
+  Customer(CustNo(Pk),CustName)
+  Complaint(CustNo(FK),DeptNo(FK),DateOfCompaints,NatureOfComplaints)
+  Department(DeptNo(PK),DeptName,DeptLocation,MgrId(FK),Tel)
+
