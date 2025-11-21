@@ -1,0 +1,10 @@
+Where : Filter Rows
+Having : Filter Groups
+Avg(isnull(salary,0)) : For all even the null value
+Agg Function Not count null values
+distinct : order + Unique
+any table have foreign key is child for another table
+Turncate   :  Delete
+Faster     :  Slower
+Cannot Rollback : Can Rollback
+
